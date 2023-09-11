@@ -14,10 +14,6 @@ permissions:
     mode: 777
 
 hooks:
-  AfterInstall:
-    - location: scripts/start.sh
-      timeout: 60
-      runas: ubuntu
   ApplicationStart:
     - location: scripts/start.sh
       timeout: 60
